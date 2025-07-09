@@ -8,9 +8,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Fira Code", monospace;
-    background-color: #000000;
+    background-color: #161616;
     color: #ffffff;
     line-height: 2;
     text-overflow: ellipsis;
