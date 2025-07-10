@@ -21,6 +21,10 @@ body {
     overflow-wrap: break-word;
 }
 
+#banner-navbar-space {
+    min-height: 108px;
+}
+
 .emoji {
     font-family: "Noto Color Emoji", sans-serif;
     font-weight: 400;
