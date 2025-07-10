@@ -12,3 +12,7 @@ window.onscroll = function() {
 
   prevScrollpos = currentScrollPos;
 }
+
+window.onresize = () => {
+  var navbarHeight = document.getElementById("navbar").offsetHeight;
+}
