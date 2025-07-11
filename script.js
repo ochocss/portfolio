@@ -1,6 +1,14 @@
 var prevScrollpos = window.pageYOffset;
-var navbarHeight = document.getElementById("navbar").offsetHeight;
+var navbarHeight;
 document.getElementById("banner-navbar-space").style.minHeight = navbarHeight*2;
+
+window.onload = fixNavbar();
+window.onresize = fixNavbar();
+
+function fixNavbar() {
+  navbarHeight = document.getElementById("navbar").offsetHeight;
+  document.getElementById("banner-navbar-space").style.minHeight = navbarHeight.toString() + "px";  
+}
 
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -12,9 +20,4 @@ window.onscroll = function() {
   }
 
   prevScrollpos = currentScrollPos;
-}
-
-window.onresize = () => {
-  var navbarHeight = document.getElementById("navbar").offsetHeight;
-  document.getElementById("banner-navbar-space").style.minHeight = navbarHeight.toString() + "px";
 }
