@@ -81,13 +81,14 @@ body {
 
 .dropdown {
     position: relative;
-    display: none;
+    display: inline-block;
 }
 
 .dropdown-items {
     position: absolute;
     background-color: #2b2b2b;
-    right: -50%;
+    top: 100%;
+    right: 0;
     display: none;
 }
 
@@ -208,32 +209,6 @@ li {
     background-image: url("images/contact-icons/LinkedIN.svg");
 }
 
-@media (min-width: 2000px) {
-    .nav-title {
-        font-size: 4rem;
-    }
-
-    .banner h1 {
-        font-size: 8rem;
-    }
-
-    .banner p {
-        font-size: 2.8rem;
-    }
-
-    .sections a {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 3.2rem;
-    }
-
-    section li {
-        font-size: 1.8rem;
-    }
-}
-
 @media (max-width: 1150px) { /* dropdown */
     .sections {display: none;}
     .dropdown {display: block;}
@@ -243,8 +218,13 @@ li {
     #navbar {
         flex-direction: column;
     }
+
     .nav-title {
         font-size: 2rem;
+    }
+
+    .dropdown-items {
+        right: -50%;
     }
 
     .banner h1 {
