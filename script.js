@@ -2,8 +2,8 @@ var prevScrollpos = window.pageYOffset;
 var navbarHeight;
 document.getElementById("banner-navbar-space").style.minHeight = navbarHeight*2;
 
-window.onload = fixNavbar();
-window.onresize = fixNavbar();
+window.onload = fixNavbar;
+window.onresize = fixNavbar;
 
 function fixNavbar() {
   navbarHeight = document.getElementById("navbar").offsetHeight;
