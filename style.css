@@ -209,7 +209,7 @@ li {
     background-image: url("images/contact-icons/LinkedIN.svg");
 }
 
-@media (max-width: 1150px) { /* dropdown */
+@media (max-width: 1400px) { /* dropdown */
     .sections {display: none;}
     .dropdown {display: block;}
 }
@@ -242,10 +242,10 @@ li {
     }
 
     .banner h1 {
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
 
     .banner p {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 }
