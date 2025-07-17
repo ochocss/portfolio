@@ -146,7 +146,7 @@ section {
     padding: 1.3em;
 }
 
-h2 {
+section > h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     font-weight: 500;
