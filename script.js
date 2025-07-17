@@ -17,7 +17,30 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = (navbarHeight * -1).toString() + "px";
+    closeDropdown();
   }
 
   prevScrollpos = currentScrollPos;
+}
+
+function openDropdown() {
+  document.getElementById("dropdown-items").classList.toggle("active");
+}
+
+function closeDropdown() {
+  var dropdowns = document.getElementsByClassName("dropdown-items");
+  var i;
+  var length = dropdowns.length;
+  for (i = 0; i < length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('active')) {
+      openDropdown.classList.remove('active');
+    }
+  }
+}
+
+window.onclick = (event) => {
+  if (!event.target.matches('.dropbtn')) {
+    closeDropdown();
+  }
 }
