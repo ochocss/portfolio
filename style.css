@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap'); /* weight: 300 - 700 */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-/* weight: 300 - 700 */
 
 * {
     margin: 0;
@@ -41,15 +40,15 @@ body {
     padding-left: 0.6em;
     padding-right: 0.6em;
     transition: top 0.4s;
-}
 
-#navbar a {
-    color: white;
-    float: left;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    padding: 14px 16px;
+    & a {
+        color: white;
+        float: left;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding: 14px 16px;
+    }
 }
 
 .nav-title {
@@ -61,12 +60,12 @@ body {
 .sections { /* nav buttons */
     display: flex;
     height: 100%;
-}
 
-.sections a {
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
+    & a {
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* dropdown */
@@ -81,7 +80,12 @@ body {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: none;
+
+    &:hover {
+        & .dropdown-items {display: block;}
+        & .dropbtn {background-color: #2a1272;}
+    }
 }
 
 .dropdown-items {
@@ -90,22 +94,18 @@ body {
     top: 100%;
     right: 0;
     display: none;
+    transition: top 0.4s ease;
+
+    & a {
+        color: rgb(255, 255, 255);
+        padding: 0.75em 1em;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+
+        &:hover {background-color: #4d4d4d;}
+    }
 }
-
-.dropdown-items a {
-    color: rgb(255, 255, 255);
-    padding: 0.75em 1em;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-items a:hover {background-color: #4d4d4d;}
-
-.dropdown:hover .dropdown-items {display: block;}
-
-.dropdown-items a {width: 100%;}
-
-.dropdown:hover .dropbtn {background-color: #2a1272;}
 
 .banner {
     background-image: url("images/imagem-banner.png");
@@ -117,16 +117,16 @@ body {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-}
 
-.banner h1 {
-    font-size: 6rem;
-    color: #ffffff;
-}
+    & h1 {
+        font-size: 6rem;
+        color: #ffffff;
+    }
 
-.banner p {
-    font-size: 2rem;
-    color: #ffffff;
+    & p {
+        font-size: 2rem;
+        color: #ffffff;
+    }
 }
 
 section {
@@ -179,22 +179,22 @@ li {
     background-color: #2c1586;
     padding: 20px;
     text-align: center;
-}
 
-.contacts a { /* bolinhas */
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 0 10px;
-    background-size: cover;
-}
+    & a { /* bolinhas */
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border-radius: 50%;
+        margin: 0 10px;
+        background-size: cover;
+    }
 
-.contacts p {
-    font-size: 14px;
-    margin-top: 10px;
-    color: #d0c0f0;
+    & p {
+        font-size: 14px;
+        margin-top: 10px;
+        color: #d0c0f0;
+    }
 }
 
 #github {
