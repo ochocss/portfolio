@@ -257,8 +257,8 @@ li {
 
             & span {
                 align-self: center;
-                width: 1.8rem;
-                height: 1.8rem;
+                width: 1.7rem;
+                height: 1.7rem;
                 margin: 0;
                 border-radius: 4px;
             }
@@ -278,12 +278,12 @@ li {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), transparent 80%, #16318b);
+    background-image: conic-gradient(from var(--angle), transparent 80%, var(--color));
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     z-index: -10;
-    padding: 0.3em;
+    padding: 0.4em;
     border-radius: 0.8rem;
     animation: 4.5s spin linear infinite;
 }
