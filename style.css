@@ -44,12 +44,18 @@ body {
     z-index: 10;
 
     & a {
-        color: white;
         float: left;
         display: block;
         text-decoration: none;
         text-align: center;
         padding: 14px 16px;
+        color: white;
+        transition: 0.35s;
+
+        &:hover {
+            color: rgb(185, 185, 185);
+            transition: 0.35s;
+        }
     }
 }
 
@@ -72,12 +78,20 @@ body {
 
 /* dropdown */
 .dropbtn {
+    font-family: "Fira Code", monospace;
     background-color: #33168b;
     color: white;
-    padding: 16px;
-    font-size: 1rem;
+    padding: 0.75em;
+    font-size: 1.2rem;
+    font-weight: 200;
     border: none;
     cursor: pointer;
+    transition: 0.35s;
+
+    &:hover {
+        color: rgb(185, 185, 185);
+        transition: 0.35s;
+    }
 }
 
 .dropdown {
@@ -165,11 +179,11 @@ li {
     color: white;
 }
 
-.projects, .languages {
+#projects, #languages {
     margin-top: 2em;
 }
 
-.projects a {
+#projects a {
     color: #c1acff;
     text-decoration: none;
 }
@@ -193,7 +207,7 @@ li {
     margin: 1rem;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(27em, 1fr));
     justify-content: center;
     gap: 2.5rem;
     padding: 1rem;
@@ -201,8 +215,8 @@ li {
 
 .project {
     margin: 0 auto;
-    padding: 2em;
-    background-color: #1d1d1d;
+    padding: 1.75em;
+    background-color: #252525;
     border-radius: 0.8rem;
     display: flex;
     text-align: center;
@@ -214,11 +228,42 @@ li {
 
     & img {
         border-radius: 0.8rem;
-        margin-top: 0.5em;
+        margin-top: 1em;
         max-width: 100%;
         max-height: 50rem;
         width: auto;
-    }    
+    }
+
+    & .upper-vbox {
+        vertical-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        & a {
+            width: 3rem;
+            height: 3rem;
+            margin: 0;
+            box-shadow: 0 0 12px 0 rgb(157, 135, 255);
+        }
+
+        & .technologies-div {
+            max-width: 7rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            gap: 0.5rem;
+
+            & span {
+                align-self: center;
+                width: 1.8rem;
+                height: 1.8rem;
+                margin: 0;
+                border-radius: 4px;
+            }
+        }
+    }
 }
 
 /* spinning border */
@@ -261,13 +306,10 @@ li {
     text-align: center;
 
     & a { /* bolinhas */
-        display: inline-block;
         width: 60px;
         height: 60px;
-        background-color: white;
-        border-radius: 50%;
+        background-color: #33168b;
         margin: 0 10px;
-        background-size: cover;
     }
 
     & p {
@@ -277,16 +319,23 @@ li {
     }
 }
 
+.contact-balls {
+    display: inline-block;
+    border-radius: 50%;
+    background-size: cover;
+
+}
+
 #github {
-    background-image: url("images/contact-icons/Github.svg");
+    background-image: url("images/icons/Github.svg");
 }
 
 #email {
-    background-image: url("images/contact-icons/Gmail.svg");
+    background-image: url("images/icons/Gmail.svg");
 }
 
 #linkedin {
-    background-image: url("images/contact-icons/LinkedIN.svg");
+    background-image: url("images/icons/LinkedIN.svg");
 }
 
 @media (max-width: 1400px) { /* dropdown */
