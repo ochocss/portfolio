@@ -1,0 +1,17 @@
+{   
+    "about": "About",
+    "formation": "Formation",
+    "skills": "Skills",
+    "technologies-drop": "Technologies",
+    "certificates": "Certificates",
+    "projects": "Projects",
+    "languages": "Languages",
+    "contacts-drop": "Contacts",
+    
+    "tmr-desc": "A RESTful CRUD for tasks, made with React and PrimeReact for the frontend and Java, Spring Boot and MySQL for the backend",
+    "pride-month-desc": "A pride month website made for a school project",
+    "minigames-desc": "A minigames collection made in Swing",
+    "calculator-desc": "A simple calculator made in Swing",
+    "orbit-simulator-desc": "An orbit physics simulator made in Godot",
+    "test-game-desc": "A simple test game made in Godot"
+}

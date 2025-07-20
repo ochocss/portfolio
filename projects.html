@@ -13,17 +13,26 @@
         <a class="nav-title" href="index.html">Fernando Hirsch</a>
 
         <div class="nav-infos">
-            <div class="dropdown">
-                <button class="dropbtn" onclick="openDropdown()">Menu</button>
+            <div class="dropdown" dropdown>
+                <button class="dropbtn" dropbtn>Menu</button>
                 <div class="dropdown-items" id="dropdown-items">
-                    <a href="index.html#">About</a>
-                    <a href="index.html#about">Formation</a>
-                    <a href="index.html#formation">Skills</a>
-                    <a href="index.html#skills">Technologies</a>
-                    <a href="index.html#technologies">Certificates</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="index.html#projects">Languages</a>
-                    <a href="#contacs">Contacts</a>
+                    <a href="index.html#" data-i18n="about">About</a>
+                    <a href="index.html#about" data-i18n="formation">Formation</a>
+                    <a href="index.html#formation" data-i18n="skills">Skills</a>
+                    <a href="index.html#skills" data-i18n="technologies-drop">Technologies</a>
+                    <a href="index.html#technologies" data-i18n="certificates">Certificates</a>
+                    <a href="projects.html" data-i18n="projects">Projects</a>
+                    <a href="index.html#projects" data-i18n="languages">Languages</a>
+                    <a href="index.html#languages" onclick="" data-i18n="contacts-drop">Contacts</a>
+                </div>
+            </div>
+            <div class="dropdown" dropdown>
+                <button class="dropbtn" style="background: none; border: none;" dropbtn>
+                    <span class="icon-balls" style="background-image: url(images/icons/languages.svg); border-radius: 0; height: 2rem; width: 2rem;"></span>
+                </button>
+                <div class="dropdown-items dropdown-languages">
+                    <a onclick="loadLanguage(`projects`, `en`)">English</a>
+                    <a onclick="loadLanguage(`projects`, `pt`)">Português</a>
                 </div>
             </div>
         </div>
@@ -31,7 +40,7 @@
 
     <header class="banner" style="min-height: 25em;">
         <div id="banner-navbar-space"><span>&nbsp</span></div>
-        <h1 class="project-title">Projects</h1>
+        <h1 class="project-title" data-i18n="projects">Projects</h1>
         <br>
         <hr>
     </header>
@@ -50,7 +59,7 @@
                     <span class="icon-balls" style="background-image: url(images/icons/mysql.svg);"></span>
                 </div>
             </div>
-            <label>A RESTful CRUD for tasks, made with React and PrimeReact for the frontend and Java, Spring Boot and JDBC for the backend</label>
+            <label data-i18n="tmr-desc">A RESTful CRUD for tasks, made with React and PrimeReact for the frontend and Java, Spring Boot and MySQL for the backend</label>
             <img src="images/projects/tmr.png" />
         </div>
         <div class="project spinning-border" style="--color: #c2252f;">
@@ -63,7 +72,7 @@
                     <span class="icon-balls" style="background-image: url(images/icons/javascript.svg);"></span>
                 </div>
             </div>
-            <label>A pride month website made for a school project</label>
+            <label data-i18n="pride-month-desc">A pride month website made for a school project</label>
             <img src="images/projects/pride-month.png" />
         </div>
         <div class="project spinning-border"  style="--color: #b7edb6">
@@ -74,7 +83,7 @@
                     <span class="icon-balls" style="background-image: url(images/icons/java.svg);"></span>
                 </div>
             </div>
-            <label>A minigame collection made in Swing</label>
+            <label data-i18n="minigames-desc">A minigames collection made in Swing</label>
             <img src="images/projects/minigames.png" />
         </div>
         <div class="project spinning-border" style="--color: #a3c0ff";>
@@ -85,7 +94,7 @@
                     <span class="icon-balls" style="background-image: url(images/icons/java.svg);"></span>
                 </div>
             </div>
-            <label>A simple calculator also made in Swing</label>
+            <label data-i18n="calculator-desc">A simple calculator made in Swing</label>
             <img src="images/projects/calculator.jpg" />
         </div>
         <div class="project spinning-border" style="--color: #2429d1";>
@@ -96,7 +105,7 @@
                     <span class="icon-balls" style="background-image: url(images/icons/godot.svg);"></span>
                 </div>
             </div>
-            <label>An orbit physics simulator made in Godot</label>
+            <label data-i18n="orbit-simulator-desc">An orbit physics simulator made in Godot</label>
             <img src="images/projects/orbitsimulator.png" />
         </div>
         <div class="project spinning-border" style="--color: #425e88">
@@ -107,14 +116,14 @@
                     <span class="icon-balls" style="background-image: url(images/icons/godot.svg);"></span>
                 </div>
             </div>
-            <label>A simple test game made in Godot</label>
+            <label data-i18n="test-game-desc">A simple test game made in Godot</label>
             <img src="images/projects/testgame.png" />
         </div>
     </div>
 
     <br>
 
-    <footer id="contacs" class="contacts">
+    <footer id="contacs" class="contacts" data-i18n="contacts-drop">
         <h2>Contacts:</h2>
         <a class="icon-balls" id="github" href="https://github.com/ochocss"></a>
         <a class="icon-balls" id="email" href="mailto:fernandobhirsch@gmail.com"></a>

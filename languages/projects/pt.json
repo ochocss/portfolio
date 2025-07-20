@@ -1,0 +1,17 @@
+{   
+    "about": "Sobre mim",
+    "formation": "Formação",
+    "skills": "Habilidades",
+    "technologies-drop": "Tecnologias",
+    "certificates": "Certificados",
+    "projects": "Projetos",
+    "languages": "Línguas",
+    "contacts-drop": "Contatos",
+    
+    "tmr-desc": "Um CRUD RESTful de tarefas, feito com React e PrimeReact no frontent e Java, Spring Boot e MySQL no backend",
+    "pride-month-desc": "Um site sobre o mês do orgulho feito para um projeto escolar",
+    "minigames-desc": "Uma coleção de minigames feito com Swing",
+    "calculator-desc": "Uma calculadora simples feita com Swing",
+    "orbit-simulator-desc": "Um simulador de órbitas feito em Godot",
+    "test-game-desc": "Um jogo de teste feito em Godot"
+}
