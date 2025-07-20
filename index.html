@@ -6,82 +6,82 @@
     <title>Fernando Hirsch</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="images/icon.ico">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav id="navbar">
-        <label class="nav-title"><a href="index.html">Fernando Hirsch</a></label>
+        <label><a href="index.html" class="nav-title">Fernando Hirsch</a></label>
 
-        <div class="sections">
-            <a href="#">About</a>
-            <a href="#about">Formation</a>
-            <a href="#formation">Skills</a>
-            <a href="#skills">Technologies</a>
-            <a href="#technologies">Certificates</a>
-            <a href="projects.html">Projects</a>
-            <a href="#projects">Languages</a> 
-            <a href="#languages">Contacts</a>
-            <!-- it redirects to an upper section so the navbar doesnt block the section -->
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="openDropdown()">Menu</button>
-            <div class="dropdown-items" id="dropdown-items">
-                <a href="#">About</a>
-                <a href="#about">Formation</a>
-                <a href="#formation">Skills</a>
-                <a href="#skills">Technologies</a>
-                <a href="#technologies">Certificates</a>
-                <a href="projects.html">Projects</a>
-                <a href="#projects">Languages</a>
-                <a href="#languages">Contacts</a>
+        <div class="nav-infos">
+            <div class="dropdown" dropdown>
+                <button class="dropbtn" dropbtn>Menu</button>
+                <div class="dropdown-items" id="dropdown-items">
+                    <a href="#" data-i18n="about">About</a>
+                    <a href="#about" data-i18n="formation">Formation</a>
+                    <a href="#formation" data-i18n="skills">Skills</a>
+                    <a href="#skills" data-i18n="technologies-drop">Technologies</a>
+                    <a href="#technologies" data-i18n="certificates">Certificates</a>
+                    <a href="projects.html" data-i18n="projects">Projects</a>
+                    <a href="#projects" data-i18n="languages">Languages</a>
+                    <a href="#languages" onclick="" data-i18n="contacts-drop">Contacts</a>
+                </div>
             </div>
-          </div>
+            <div class="dropdown" dropdown>
+                <button class="dropbtn" style="background: none; border: none;" dropbtn>
+                    <span class="icon-balls" style="background-image: url(images/icons/languages.svg); border-radius: 0; height: 2rem; width: 2rem;"></span>
+                </button>
+                <div class="dropdown-items dropdown-languages">
+                    <a onclick="loadLanguage(`index`, `en`)">English</a>
+                    <a onclick="loadLanguage(`index`, `pt`)">Português</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <header class="banner" style="background-image: url(./images/imagem-banner.png);">
         <div id="banner-navbar-space"><span>&nbsp</span></div>
         <h1>Fernando Hirsch</h1>
-        <p>Software developer and Game dev</p>
+        <p data-i18n="subtitle">Software developer and Game dev</p>
         <br>
     </header>
 
     <section id="about">
-        <h2>About</h2>
+        <h2 data-i18n="about">About</h2>
         <ul>
-            <li>Brazilian <span class="emoji">🇧🇷</span></li>
-            <li>Programming since 2023</li>
-            <li>Currently an IT student at IFPR</li>
+            <li><span data-i18n="about-text-1">Brazilian</span><span class="emoji">&nbsp 🇧🇷</span></li>
+            <li data-i18n="about-text-2">Programming since 2023</li>
+            <li data-i18n="about-text-3">Currently an IT student at IFPR</li>
         </ul>
     </section>
 
     <br>
 
     <section id="formation">
-        <h2>Formation</h2>
+        <h2 data-i18n="formation">Formation</h2>
         <ul>
-            <li>Instituto Federal do Paraná – Técnico em Informática Integrado ao Ensino Médio (2023 – 2026)</li>
+            <li data-i18n="formation-text-1">Technical Course in Informatics Integrated into Highschool - Instituto Federal do Paraná (2023 – 2026)</li>
         </ul>
     </section>
 
     <br>
 
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 data-i18n="skills">Skills</h2>
         <ul>
-            <li>Restful APIs</li>
-            <li>Databases</li>
-            <li>Serialization</li>
-            <li>Game Development</li>
-            <li>OOP</li>
-            <li>Robotics</li>
-            <li>Version Control</li>
+            <li data-i18n="skills-text-1">Restful APIs</li>
+            <li data-i18n="skills-text-2">Databases</li>
+            <li data-i18n="skills-text-3">Serialization</li>
+            <li data-i18n="skills-text-4">Game Development</li>
+            <li data-i18n="skills-text-5">OOP</li>
+            <li data-i18n="skills-text-6">Robotics</li>
+            <li data-i18n="skills-text-7">Version Control</li>
         </ul>  
     </section>  
 
     <br>
 
     <section id="technologies">
-        <h2>Programming Languages and Technologies</h2>
+        <h2 data-i18n="technologies">Programming Languages and Technologies</h2>
         <ul>
             <li>C</li>
             <li>Java
@@ -94,55 +94,53 @@
             </li>
             <li>Python</li>
             <li>GDScript</li>
-            <li>HTML and CSS</li>
-            <li>Javascript and Typescript
+            <li data-i18n="technologies-text-1">HTML and CSS</li>
+            <li data-i18n="technologies-text-2">Javascript and Typescript
                 <ul>
                     <li>&nbsp React</li>
                 </ul>
             </li>
             <li>SQL</li>
-            <li>Git and GitHub</li>
+            <li data-i18n="technologies-text-3">Git and GitHub</li>
         </ul>
     </section>
 
     <br>
 
     <section id="certificates">
-        <h2>Certificates</h2>
+        <h2  data-i18n="certificates">Certificates</h2>
         <ul>
-            <li>Robotics Mediator at IFPR – 2024</li>
-            <li>EFSET C2 English Certificate</li>
+            <li data-i18n="certificates-text-1">Robotics Mediator at IFPR – 2024</li>
+            <li data-i18n="certificates-text-2">EFSET C2 English Certificate</li>
         </ul>
     </section>
         
     <br>
 
     <section id="projects">
-        <h2><a href="projects.html">Projects</a></h2>
+        <h2><a href="projects.html" data-i18n="projects">Projects</a></h2>
     </section>
         
     <br>
 
     <section id="languages">
-        <h2>Languages</h2>
-        <p>• Portuguese</p>
+        <h2 data-i18n="languages">Languages</h2>
+        <p data-i18n="languages-text-1">• Portuguese</p>
         <div class="progress-bar">
             <div class="progress" style="width: 100%;">100%</div>
         </div>
-        <p>• English</p>
+        <p data-i18n="languages-text-2">• English</p>
         <div class="progress-bar">
-            <div class="progress" style="width: 70%;">70%</div>
+            <div class="progress" style="width: 72%;">72%</div>
         </div>
     </section>
 
     <footer class="contacts">
-        <h2>Contacts:</h2>
-        <a class="contact-balls" id="github" href="https://github.com/ochocss"></a>
-        <a class="contact-balls" id="email" href="mailto:fernandobhirsch@gmail.com"></a>
-        <a class="contact-balls" id="linkedin" href="https://www.linkedin.com/in/fernando-barreto-hirsch/"></a>
+        <h2 data-i18n="contacts">Contacts:</h2>
+        <a class="icon-balls" id="github" href="https://github.com/ochocss"></a>
+        <a class="icon-balls" id="email" href="mailto:fernandobhirsch@gmail.com"></a>
+        <a class="icon-balls" id="linkedin" href="https://www.linkedin.com/in/fernando-barreto-hirsch/"></a>
         <p>© 2025 Fernando Hirsch</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

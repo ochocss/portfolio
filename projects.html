@@ -6,36 +6,27 @@
     <title>Fernando Hirsch</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="images/icon.ico">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav id="navbar">
         <a class="nav-title" href="index.html">Fernando Hirsch</a>
 
-        <div class="sections">
-            <a href="index.html#">About</a>
-            <a href="index.html#about">Formation</a>
-            <a href="index.html#formation">Skills</a>
-            <a href="index.html#skills">Technologies</a>
-            <a href="index.html#technologies">Certificates</a>
-            <a href="projects.html">Projects</a>
-            <a href="index.html#projects">Languages</a> 
-            <a href="#contacs">Contacts</a>
-            <!-- it redirects to an upper section so the navbar doesnt block the section -->
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn" onclick="openDropdown()">Menu</button>
-            <div class="dropdown-items" id="dropdown-items">
-                <a href="index.html#">About</a>
-                <a href="index.html#about">Formation</a>
-                <a href="index.html#formation">Skills</a>
-                <a href="index.html#skills">Technologies</a>
-                <a href="index.html#technologies">Certificates</a>
-                <a href="projects.html">Projects</a>
-                <a href="index.html#projects">Languages</a>
-                <a href="#contacs">Contacts</a>
+        <div class="nav-infos">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="openDropdown()">Menu</button>
+                <div class="dropdown-items" id="dropdown-items">
+                    <a href="index.html#">About</a>
+                    <a href="index.html#about">Formation</a>
+                    <a href="index.html#formation">Skills</a>
+                    <a href="index.html#skills">Technologies</a>
+                    <a href="index.html#technologies">Certificates</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="index.html#projects">Languages</a>
+                    <a href="#contacs">Contacts</a>
+                </div>
             </div>
-          </div>
+        </div>
     </nav>
 
     <header class="banner" style="min-height: 25em;">
@@ -48,28 +39,28 @@
     <div class="projects-container">
         <div class="project spinning-border"  style="--color: #666666">
             <div class="upper-vbox">
-                <a class="contact-balls" id="github" href="https://github.com/ochocss/tmr-front"></a>
+                <a class="icon-balls" id="github" href="https://github.com/ochocss/tmr-front"></a>
                 <h2>TMR</h2>
                 <div class="technologies-div">
-                    <span class="contact-balls" style="background-image: url(images/icons/react.svg);"></span>
-                    <span class="contact-balls" style="background-image: url(images/icons/javascript.svg);"></span>
-                    <span class="contact-balls" style="background-image: url(images/icons/css.svg);"></span>
-                    <span class="contact-balls" style="background-image: url(images/icons/java.svg);"></span>
-                    <span class="contact-balls" style="background-image: url(images/icons/spring.svg);"></span>
-                    <span class="contact-balls" style="background-image: url(images/icons/mysql.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/react.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/javascript.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/css.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/java.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/spring.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/mysql.svg);"></span>
                 </div>
             </div>
             <label>A RESTful CRUD for tasks, made with React and PrimeReact for the frontend and Java, Spring Boot and JDBC for the backend</label>
             <img src="images/projects/tmr.png" />
         </div>
-        <div class="project spinning-border"  style="--color: #d92e5b">
+        <div class="project spinning-border" style="--color: #c2252f;">
             <div class="upper-vbox">
-                <a class="contact-balls" id="github" href="https://github.com/enchedev/pride-month"></a>
+                <a class="icon-balls" id="github" href="https://github.com/enchedev/pride-month"></a>
                 <h2>Pride Month</h2>
                 <div class="technologies-div">
-                    <span class="contact-balls" style="background-image: url(images/icons/html.svg);"></span>
-                    <span class="contact-balls" style="background-image: url(images/icons/css.svg);"></span>
-                    <span class="contact-balls" style="background-image: url(images/icons/javascript.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/html.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/css.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/javascript.svg);"></span>
                 </div>
             </div>
             <label>A pride month website made for a school project</label>
@@ -77,10 +68,10 @@
         </div>
         <div class="project spinning-border"  style="--color: #b7edb6">
             <div class="upper-vbox">
-                <a class="contact-balls" id="github" href="https://github.com/ochocss/minigames"></a>
+                <a class="icon-balls" id="github" href="https://github.com/ochocss/minigames"></a>
                 <h2>Minigames</h2>
                 <div class="technologies-div">
-                    <span class="contact-balls" style="background-image: url(images/icons/java.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/java.svg);"></span>
                 </div>
             </div>
             <label>A minigame collection made in Swing</label>
@@ -88,10 +79,10 @@
         </div>
         <div class="project spinning-border" style="--color: #a3c0ff";>
             <div class="upper-vbox">
-                <a class="contact-balls" id="github" href="https://github.com/enchedev/calculator"></a>
+                <a class="icon-balls" id="github" href="https://github.com/enchedev/calculator"></a>
                 <h2>Calculator</h2>
                 <div class="technologies-div">
-                    <span class="contact-balls" style="background-image: url(images/icons/java.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/java.svg);"></span>
                 </div>
             </div>
             <label>A simple calculator also made in Swing</label>
@@ -99,10 +90,10 @@
         </div>
         <div class="project spinning-border" style="--color: #2429d1";>
             <div class="upper-vbox">
-                <a class="contact-balls" id="github" href="https://github.com/enchedev/orbit-simulator"></a>
+                <a class="icon-balls" id="github" href="https://github.com/enchedev/orbit-simulator"></a>
                 <h2>Orbit Simulator</h2>
                 <div class="technologies-div">
-                    <span class="contact-balls" style="background-image: url(images/icons/godot.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/godot.svg);"></span>
                 </div>
             </div>
             <label>An orbit physics simulator made in Godot</label>
@@ -110,10 +101,10 @@
         </div>
         <div class="project spinning-border" style="--color: #425e88">
             <div class="upper-vbox">
-                <a class="contact-balls" id="github" href="https://github.com/enchedev/test-game"></a>
+                <a class="icon-balls" id="github" href="https://github.com/enchedev/test-game"></a>
                 <h2>Test Game</h2>
                 <div class="technologies-div">
-                    <span class="contact-balls" style="background-image: url(images/icons/godot.svg);"></span>
+                    <span class="icon-balls" style="background-image: url(images/icons/godot.svg);"></span>
                 </div>
             </div>
             <label>A simple test game made in Godot</label>
@@ -125,12 +116,10 @@
 
     <footer id="contacs" class="contacts">
         <h2>Contacts:</h2>
-        <a class="contact-balls" id="github" href="https://github.com/ochocss"></a>
-        <a class="contact-balls" id="email" href="mailto:fernandobhirsch@gmail.com"></a>
-        <a class="contact-balls" id="linkedin" href="https://www.linkedin.com/in/fernando-barreto-hirsch/"></a>
+        <a class="icon-balls" id="github" href="https://github.com/ochocss"></a>
+        <a class="icon-balls" id="email" href="mailto:fernandobhirsch@gmail.com"></a>
+        <a class="icon-balls" id="linkedin" href="https://www.linkedin.com/in/fernando-barreto-hirsch/"></a>
         <p>© 2025 Fernando Hirsch</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
